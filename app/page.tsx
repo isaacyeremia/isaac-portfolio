@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { basePath } from "./basePath";
+
 import {
   ArrowUpRight,
   ChevronDown,
@@ -65,7 +67,7 @@ export default function Home() {
       demo: "#",
 
       image:
-        "\\portofolio\\griya sehat\\Griya_Sehat_Original_Screenshots_Portfolio.png",
+        `${basePath}/portofolio/griya-sehat/Griya_Sehat_Original_Screenshots_Portfolio.png`,
     },
 
     {
@@ -92,7 +94,7 @@ export default function Home() {
       demo: "#",
 
       image:
-        "\\portofolio\\eventify\\Eventify_Android_App_Showcase.png",
+        `${basePath}/portofolio/eventify/Eventify_Android_App_Showcase.png`,
     },
 
     {
@@ -121,7 +123,7 @@ export default function Home() {
         "https://pritabalinannyfamilycare.com",
 
       image:
-        "\\portofolio\\prita\\Prita_Bali_Portfolio_Showcase(1).png",
+        `${basePath}/portofolio/prita/Prita_Bali_Portfolio_Showcase(1).png`,
     },
   ];
 
@@ -452,7 +454,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/Isaac_Yeremia_Nugroho_CV_ID.pdf"
+                href={`${basePath}/Isaac_Yeremia_Nugroho_CV_ID.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-button"
